@@ -287,7 +287,7 @@ table.position
 	clip: rect(auto, auto, auto, 403px);
 }
 
-.art-menu a .t 
+.art-menu a .t
 {
 font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 font-size: 13px;
@@ -469,7 +469,7 @@ font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 font-size: 13px;
 	white-space : nowrap;
 	padding: 0 1px;
-	line-height: 30px;	
+	line-height: 30px;
 }
 
 .art-BlockHeader .l, .art-BlockHeader .r
@@ -488,7 +488,7 @@ font-size: 13px;
 }
 
 .art-BlockHeader .r
-{ 
+{
 	width:950px;
 	right:0;
 	clip: rect(auto, auto, auto, 949px);
@@ -983,7 +983,7 @@ li ol, li ul
 	padding:0;
 }
 
-li 
+li
 {
 	margin:0.2em 0;
 	padding:0;
@@ -997,7 +997,7 @@ ul
 ol
 {
 	list-style-position:inside;
-	
+
 }
 
 
@@ -1014,7 +1014,7 @@ ol
 	padding-left:0;
 }
 
-.art-Post ul li, .art-Post ol ul li 
+.art-Post ul li, .art-Post ol ul li
 {
 	background-image: url('../images/PostBullets.png');
 	background-repeat:no-repeat;
@@ -1340,7 +1340,7 @@ table.moduletable th
 	padding-bottom: 1em;
 }
 
-.column_separator 
+.column_separator
 {
 	padding-left: .4em;
 }
@@ -1637,7 +1637,7 @@ z-index: 2;
 {
 width: 216px;
 height: 31px;
-background: transparent url(http://www.srat-app.com/SRATS/templates/colorsoft/images/search.png) no-repeat top;
+background: transparent url(templates/colorsoft/images/search.png) no-repeat top;
 border: solid 0px #6b9c6d;
 color: #cccccc;
   padding: 10px;
@@ -1808,7 +1808,7 @@ div.message
 .pollstableborder td
 {
 	text-align: left;
-	
+
 }
 
 /* WebLinks */
