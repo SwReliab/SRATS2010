@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD>
+<TITLE>SRATS:Software Reliability Assessment Tool on Spreadsheet Software</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 8.0.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="stylesheet" type="text/css" href="base.css">
+</HEAD>
+<!--<BODY background="bg.jpg">-->
+<BODY>
+<table>
+<tr><td colspan=2 class=title><img src="nirui.png"><br><div class=menu><A href="http://www.srat-app.com/SRATS/manual/pamphlet/nirui.pdf"></A></div><br></td></tr>
+<tr><td valign=top class=menubar>
+<ul>
+<li><a href="home.html">SRATS TOP</a>
+</ul>
+<ul>
+<li><a href="intro.html">概要</a>
+<li><a href="install.html">インストール</a>
+        <li><a href="manu.html">基本操作</a>
+        <li><A href="basic.html">信頼性の基礎</A>
+        <li><A href="example.html">ツールの使用例</a>
+        <li><A href="words.html">信頼性用語集</A>
+        <li><A href="ref.html">参考文献</A>
+      </ul>
+<h4>▼目次</h4>
+<ul>
+        <li><A href="example.html#1">フォールトデータ</A>
+        <li><A href="example.html#2">データの整形</A>
+        <li><A href="example.html#3">モデル選択</A>
+        <li><A href="example.html#4">評価と管理</A>
+      </ul>
+</td>
+<td valign=top class=info>
+
+<h1>ツールの使用例</h1>
+<h2><img src="ina.gif" alt=""><A name="1">フォールトデータ</A></h2>
+      ここの例では<A href="http://www.kke.co.jp/">（株）構造計画研究所</A>が作成している「<A href="http://www.kke.co.jp/srgm/">信頼度成長曲線作成ツール</A>」で配布されいるサンプルデータを使用します．フォールトデータは Excel 上で図１のようにまとめられているものとします（フォールトデータサンプルの<A href="sample_data.xls">ダウンロード</A>）．<BR>
+      <BR>
+      ここの例では，フォールトデータは日単位の集計であり，それぞれ次の項目からなっています．
+      <UL>
+        <LI>テスト日付
+        <LI>テスト工数
+        <LI>発見障害数
+        <LI>修正障害数
+        <LI>消化したテスト項目数
+      </UL>
+      <BR>
+      <div align=center>図１：フォールトデータ<BR>
+      <IMG src="e71-5.jpg" width="554" height="379" border="2"></div>
+      <BR>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="2">データの整形</A></h2>
+      SRATS では累積時刻（工数）を利用するので，Excel 上でフォールトデータの整形を行います．ここの例では，日単位のテスト工数から累積のテスト工数を作成しています（図２）．また，日単位の消化テスト項目数から累積消化テスト項目数を作成して利用することも可能です．<BR>
+      <BR>
+      次に，工数と日単位の発見フォールト数に関する２列を選択してメニューバーの
+      SRATS から RunSRATS を選択します．
+    <BR>
+      <BR>
+      <div align=center>図２：データ整形<BR>
+      <IMG src="e811-4.jpg" width="498" height="375" border="2"></div>
+      <BR>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="3">モデル選択</A></h2>
+      選択したフォールトデータに適用するモデルを選択します．一般的には，最も基本的な「Exponential
+      SRM」を最初に選択＆パラメータ推定を行います．次に Exponential SRM の適合度
+      AIC と対比しながら，他のモデルを追加していきます．このときの作業は
+      <OL>
+        <LI>「Add」でモデルを追加
+        <LI>AIC で適合度の比較
+        <LI>AIC のより小さいものを選択し，他を「Remove」で削除
+      </OL>
+      となります．つまり，最も AIC が小さくなるモデルを探します．ここの例では最終的に
+      Normal SRM が最も小さい AIC をもつモデルとして選択されます（図３）． <BR>
+          <BR>
+      <div align=center>図３：モデル比較＆選択<BR>
+      <IMG src="b111.jpg" width="551" height="371" border="2"></div>
+<BR>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="4">評価と管理</A></h2>
+      モデルの選択が完了した後は，結果を Excel シートへ出力します（図４）．ここでの評価は
+      <UL>
+        <LI>現時点で残っているフォールトが 0.17 個（=96.17-96）
+        <LI>現時点でフォールトがすべて除去されている確率が 0.84
+        <LI>次のフォールトが発見されるならば 17.8 人時（テスト工数）後
+        <LI>次のフォールトが発見されるならば 96.2 人時後までに発見される確率が 0.9
+      </UL>
+      となります．テスト管理者はこの指標をもとに
+      <UL>
+        <LI>該当ソフトウェアは十分な信頼度を達成しているので，追加のテストは必要としない
+        <LI>17.8 人時あるいは 96.2 人時の追加テストを行う
+      </UL>
+      などの判断を行います．
+      <BR>
+      <BR>
+      <div align=center>図４：評価結果<BR>
+      <IMG src="b511.jpg" width="499" height="337" border="2"></div>
+      <BR>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+</td></tr>
+</table>
+</BODY></HTML>

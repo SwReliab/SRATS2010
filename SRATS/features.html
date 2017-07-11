@@ -1,0 +1,46 @@
+---
+layout: default
+title: SRATS2010の機能変更
+---
+{% include sidebar1.html %}
+
+<div class="art-content-sidebar2">
+
+<div class="art-Post">
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+<div class="art-PostContent">
+<div class="art-article"><h2>SRATS からの変更点</h2>
+<ul>
+<li><span style="color: #52594f;">すべてのモデルのパラメータ推定を行うようにしました．</span></li>
+<li><span style="color: #52594f;">パラメータ推定の収束判定をつけました．</span></li>
+<li><span style="color: #52594f;">推定結果の表示を要約 (AIC, BIC の一覧) と詳細の二段階にわけました．</span></li>
+<li><span style="color: #52594f;">KS, MSE による尺度は現時点で未実装（実装予定）</span></li>
+<li><span style="color: #52594f;">SRATS は一部のパラメータを固定して推定できましたが，これを廃止しました（リクエストがあれば復活させます）</span></li>
+<li><span style="color: #52594f;">SRATS は登録したモデルすべてのレポートを出力しましたが，選択したモデル１つに対してレポート出力（２シート）するようにしました（FAQ:「グラフ上でモデル比較したいのですが」を参照）．</span></li>
+<li><span style="color: #52594f;">グラフの横軸の範囲を設定できるようにしました．</span></li>
+<li><span style="color: #52594f;">Be X Life の定義を変えました（算出できない場合が多くなっています）．</span></li>
+<li><span style="color: #52594f;">障害発生率のグラフ作成を加えました．</span></li>
+<li><span style="color: #52594f;">データ形式を３種類扱えるようにしました．それに伴って SRATS のデータ部分にあった「Current」を廃止しました（FAQ:「Current はなくなったのですか？」を参照）</span></li>
+<li><span style="color: #52594f;">SRATSは累積時間だけでしたが，時間間隔も扱えるようにしました（SRATS2010では<span style="color: #ff0000;">デフォルトを時間間隔</span>にしてるのでSARTSのデータをそのまま使う際には気をつけて下さい）．</span></li>
+</ul>
+<h2>今後の機能追加について</h2>
+<p>以下の機能追加を考えています．</p>
+<ul>
+<li><span style="color: #52594f;">超指数分布モデル（位相型分布モデル）の追加</span></li>
+<li><span style="color: #52594f;">残存フォールト数分布のグラフ描画</span></li>
+<li><span style="color: #52594f;">多種要因を扱えるモデルの追加</span></li>
+<li><span style="color: #52594f;">ベイズ推定による信頼区間評価</span></li>
+</ul></div><p class="modifydate">Last Updated (Wednesday, 19 May 2010 22:52)</p><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+
+</div>

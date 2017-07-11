@@ -1,0 +1,58 @@
+---
+layout: default
+title: 使用例
+---
+{% include sidebar3.html %}
+
+<div class="art-content-sidebar2">
+
+<div class="art-Post">
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+<div class="art-PostContent">
+<div class="art-article"><h2>使用例</h2>
+<h4>フォールトデータ</h4>
+使用例では<a href="http://www.kke.co.jp/">（株）構造計画研究所</a>が作成している<a href="http://www.kke.co.jp/srgm/">「信頼度成長曲線作成ツール」</a>で配布されいるサンプルデータを使用します．フォールトデータは Excel 上で図１のようにまとめられているものとします<a href="manual/sample_data.xls">（フォールトデータサンプルのダウンロード）</a>．  ここの例では，フォールトデータは日単位の集計であり，それぞれ次の項目からなっています．
+<ul>
+<li>テスト日付</li>
+<li>テスト工数</li>
+<li>発見障害数</li>
+<li>修正障害数</li>
+<li>消化したテスト項目数</li>
+</ul>
+<br />
+<div align="center">図１：障害データ<br /> <img align="middle" border="2" src="images/stories/srats/f1.jpg" /></div>
+<br />
+<h4>データの選択</h4>
+SRATS2010 では時間間隔，累積時間のいずれも利用できるので，ここではテスト工数を時間軸として評価を行います．日単位のテスト工数と発見障害数の２列を選択し，SRATS を起動します．このとき，メインフォーム上では Time Interval を指定します．また，日単位の消化テスト項目数を利用することも可能ですが，この場合は障害発見数の左に列がくるように移動させてください．
+<h4>推定・モデル選択</h4>
+選択したデータに対してすべてのモデルのパラメータ推定を行います．メインフォームの「Estimate All」で推定を行います．推定結果のサマリーから「Log Extreme-Value Min (Weibull) モデル」が AIC, BIC どちらの基準でも最良になることがわかります（図３）．  	<br />
+<div align="center">図２：推定結果<br /> <img align="middle" border="2" src="images/stories/srats/f3.jpg" /></div>
+<br />
+<h4>評価と管理</h4>
+「Log Extreme-Value Min (Weibull) モデル」による評価結果を Excel シートへ出力します（図４）．ここでの評価は
+<ul>
+<li>現時点で残っているフォールトが 0.35 個</li>
+<li>現時点でフォールトがすべて除去されている確率が 0.70</li>
+<li>次のフォールトが発見されるならば 50.4 人時（テスト工数）後</li>
+</ul>
+となります．テスト管理者はこの指標をもとに
+<ul>
+<li>該当ソフトウェアは十分な信頼度を達成しているので，追加のテストは必要としない</li>
+<li>50.4 人時の追加テストを行う</li>
+</ul>
+などの判断を行います．   	<br />
+<div align="center">図３：評価結果<br /> <img align="middle" border="2" src="images/stories/srats/f4.jpg" /></div>
+<br /></div><p class="modifydate">Last Updated (Monday, 17 May 2010 20:10)</p><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+
+</div>

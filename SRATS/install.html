@@ -1,0 +1,74 @@
+---
+layout: default
+title: インストール
+---
+<div class="art-content-wide">
+
+<div class="art-Post">
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+<div class="art-PostContent">
+<div class="art-article"><h2>インストール</h2>
+<p>インストールは</p>
+<ul>
+<li><span style="color: #52594f;">DLL とアドインファイル（xla）を所定の場所にコピー</span></li>
+<li><span style="color: #52594f;">Excel 上でアドインとして登録</span></li>
+</ul>
+<p>の手順で行います．Windows Vista より前と以降，Excel 2007 より前と以降でアドインファイルの保存場所，アドインの登録方法が異なるので，それぞれ以下の方法でインストールを行ってください．</p>
+<h3>DLL とアドインファイル（xla）のコピー</h3>
+<p>Windows 2000, Windows XP</p>
+<ul>
+<li><span style="color: #52594f;">ZIPファイルをダウンロード，解凍後に以下の場所に DLL, アドインファイル（xla）をコピーします（解凍したファイル群に srats2010.dll と srats2010.xla があることを確認して下さい）．</span></li>
+<li><span style="color: #52594f;">アドインフォルダ（\Documents and Settings\（ユーザ名）\Application Data\Microsoft\AddIns）に srats2010.dll と srats2010.xla をコピーします．</span></li>
+</ul>
+<p>Windows Vista, Windows 7</p>
+<ul>
+<li><span style="color: #52594f;">ZIPファイルをダウンロード，解凍後に以下の場所に DLL, アドインファイル（xla）をコピーします（解凍したファイル群に srats2010.dll と srats2010.xla があることを確認して下さい）．</span></li>
+<li><span style="color: #52594f;">アドインフォルダ（\Users\（ユーザ名）\AppData\Roaming\Microsoft\AddIns）に srats2010.dll と srats2010.xla をコピーします．</span></li>
+</ul>
+<h3>アドインの登録</h3>
+<p>Excel 2002, Excel XP, Excel 2003</p>
+<ul>
+<li><span style="color: #52594f;">Excel を起動します．</span></li>
+<li><span style="color: #52594f;">Excel のメニューバーから ツール -&gt; アドイン... を選択します．</span></li>
+<li><span style="color: #52594f;">SRATS にチェックを入れます．</span></li>
+<li><span style="color: #52594f;">上記の操作でメニューバーに SRATS の項目が現れればインストール完了です．</span></li>
+</ul>
+<p>Excel 2007, Excel 2010</p>
+<ul>
+<li><span style="color: #52594f;">Excel を起動します．</span></li>
+<li><span style="color: #52594f;">Excel のメニュー上部のオフィスマークから Excel のオプションを選択します．</span></li>
+<li><span style="color: #52594f;">アドインパネルの「設定...」を選択します．</span></li>
+<li><span style="color: #52594f;">Srats2010 にチェックを入れます．</span></li>
+<li><span style="color: #52594f;">上記の操作でメニュータブのアドインに SRATS の項目が現れればインストール完了です．</span></li>
+</ul>
+<p>
+「無効なオブジェクトライブラリです。または定義されていないオブジェクトへの参照を含んでいます。」のエラーが出る場合は下記を試してください．
+<ul>
+<li>コマンドプロンプトを管理者として実行する。
+<ul>
+<li>アクセサリ
+<li>コマンドプロンプトを右クリック
+<li>管理者として実行
+</ul>
+<li>次のコマンドを入力して実行：regsvr32 C:\Windows\System32\MSCOMCTL.OCX
+<li>64bit OS の場合は次のコマンドにしてください：regsvr32 C:\Windows\SysWOW64\MSCOMCTL.OCX
+</ul>
+<h2>アンインストール</h2>
+<ul>
+<li><span style="color: #52594f;">Excel を起動します．</span></li>
+<li><span style="color: #52594f;">アドイン登録の操作と同様にして Srats2010 のチェックを外します．</span></li>
+<li><span style="color: #52594f;">コピーした DLL ファイルと XLA ファイルを消去します．</span></li>
+</ul></div><p class="modifydate">Last Updated (Tuesday, 28 August 2012 20:46)</p><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+
+</div>
