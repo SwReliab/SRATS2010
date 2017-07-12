@@ -22,7 +22,7 @@ which are zipped into a file. The installation is the same as ordinary Microsoft
 
 ## Download and system requirements
 
-The zip file for SRATS can be downloaded from <a href="./SRATS2010_en_20130610.zip">here (SRATS2010_en_20130610.zip)</a>
+The zip file for SRATS can be downloaded from <a href="https://github.com/okamumu/SRATS2010/releases/tag/20130610_32bit_en">here (SRATS2010_en_20130610.zip)</a>
 
 We recommend it runs on Microsoft Excel 2010 (32bit). If an error appears on the starting SRATS, please execute the following command on command prompt with Administrator:
 
