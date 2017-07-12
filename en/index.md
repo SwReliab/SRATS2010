@@ -2,6 +2,8 @@
 layout: default-e
 title: SRATS2010
 ---
+[For Japanese](https://okamumu.github.io/SRATS2010/)
+
 # SRATS: Software Reliability Assessment Tool on Spreadsheet
 
 ## Overview
