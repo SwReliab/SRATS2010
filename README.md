@@ -1,4 +1,4 @@
-# SRATS: Software Reliability Assessment Tool on Spreadsheet
+# SRATS2010: Software Reliability Assessment Tool on Spreadsheet
 
 ## Overview
 
