@@ -1,8 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
 <TITLE>SRATS:Software Reliability Assessment Tool on Spreadsheet Software</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
-<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 8.0.0.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <META http-equiv="Content-Style-Type" content="text/css">
 <LINK rel="stylesheet" type="text/css" href="base.css">
 </HEAD>
@@ -15,136 +14,136 @@
 <li><a href="home.html">SRATS TOP</a>
 </ul>
 <ul>
-<li><a href="intro.html">$B35MW(B</a>
-<li><a href="install.html">$B%$%s%9%H!<%k(B</a>
-        <li><a href="manu.html">$B4pK\A`:n(B</a>
-        <li><A href="basic.html">$B?.Mj@-$N4pAC(B</A>
-        <li><A href="example.html">$B%D!<%k$N;HMQNc(B</a>
-        <li><A href="words.html">$B?.Mj@-MQ8l=8(B</A>
-        <li><A href="ref.html">$B;29MJ88%(B</A>
+<li><a href="intro.html">概要</a>
+<li><a href="install.html">インストール</a>
+        <li><a href="manu.html">基本操作</a>
+        <li><A href="basic.html">信頼性の基礎</A>
+        <li><A href="example.html">ツールの使用例</a>
+        <li><A href="words.html">信頼性用語集</A>
+        <li><A href="ref.html">参考文献</A>
       </ul>
-<h4>$B"'L\<!(B</h4>
+<h4>▼目次</h4>
 <ul>
-<li><A href="manu.html#1">$B35MW(B</A>
-        <li><A href="manu.html#2">$B5/F0(B</A>
-        <li><A href="manu.html#3">$B%G!<%?A*Br(B</A>
-        <li><A href="manu.html#4">$B%b%G%kA*Br(B</A>
-        <li><A href="manu.html#5">$B%Q%i%a!<%??dDj(B</A>
-        <li><A href="manu.html#6">$B?.Mj@-I>2A(B</A>
-        <li><A href="manu.html#7">$B%l%]!<%H=PNO(B</A>
+<li><A href="manu.html#1">概要</A>
+        <li><A href="manu.html#2">起動</A>
+        <li><A href="manu.html#3">データ選択</A>
+        <li><A href="manu.html#4">モデル選択</A>
+        <li><A href="manu.html#5">パラメータ推定</A>
+        <li><A href="manu.html#6">信頼性評価</A>
+        <li><A href="manu.html#7">レポート出力</A>
       </ul>
       </td>
 <td valign=top class=info>
 
-<h1>$B4pK\A`:n(B</h1>
-<h2><img src="ina.gif" alt=""><A name="1">$B35MW(B</A></h2>
-      $B$3$3$G$O(B SRATS $B$N0lO"$NA`:nJ}K!$r@bL@$7$^$9!%4pK\E*$JA`:n$NN.$l$O(B
+<h1>基本操作</h1>
+<h2><img src="ina.gif" alt=""><A name="1">概要</A></h2>
+      ここでは SRATS の一連の操作方法を説明します．基本的な操作の流れは
       <OL>
-        <LI>SRATS$B$N5/F0(B
-        <LI>$B%U%)!<%k%H%G!<%?$NA*Br(B
-        <LI>$B?.Mj@-%b%G%k$NA*Br(B
-        <LI>$B%Q%i%a!<%?$N?dDj(B
-        <LI>$B?.Mj@-I>2A(B
-        <LI>$B%l%]!<%H=PNO(B
+        <LI>SRATSの起動
+        <LI>フォールトデータの選択
+        <LI>信頼性モデルの選択
+        <LI>パラメータの推定
+        <LI>信頼性評価
+        <LI>レポート出力
       </OL>
-      $B$H$J$j$^$9!%(BSRATS$B$NFCD'$H$7$FJ#?t$N%b%G%k$rF1;~$KHf3S$9$k$3$H$,2DG=$G$"$k$?$a!$>e5-$N(B
-      3, 4 $B$N<j=g$OE,MQ$9$k%b%G%k$N?t$@$17+$jJV$9$3$H$K$J$j$^$9!%0J2<$G$O!$>e5-A`:n$N=g$rDI$C$F2r@b$7$F$$$-$^$9!%(B
+      となります．SRATSの特徴として複数のモデルを同時に比較することが可能であるため，上記の
+      3, 4 の手順は適用するモデルの数だけ繰り返すことになります．以下では，上記操作の順を追って解説していきます．
       <BR>
       <BR>
-      <div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="2">$B5/F0(B</A></h2>
-      SRATS $B$O(B Excel $B>e$N%"%I%$%s$H$7$FF0:n$7$^$9!%2<$NNc$K<($9$h$&$K%U%)!<%k%H%G!<%?$,F~NO$5$l$F$$$k(B
-      Excel $B%7!<%H$r5/F0$7$^$9!%%U%)!<%k%H%G!<%?$N7A<0$K$D$$$F$O<!$N!V%G!<%?A*Br!W$G2r@b$7$^$9!%(BExcel
-      $B$,5/F0$7$F$$$k>uBV$G!$%a%K%e!<%P!<$K$"$k!V(BSRATS -&gt; RunSRATS$B!W$rA*Br$9$k$H%a%$%s2hLL$,I=<($5$l$^$9!J?^#1!$?^#2!K!%(B<BR>
+      <div><a href="manu.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="2">起動</A></h2>
+      SRATS は Excel 上のアドインとして動作します．下の例に示すようにフォールトデータが入力されている
+      Excel シートを起動します．フォールトデータの形式については次の「データ選択」で解説します．Excel
+      が起動している状態で，メニューバーにある「SRATS -&gt; RunSRATS」を選択するとメイン画面が表示されます（図１，図２）．<BR>
       <BR>
-      <div align=center>$B?^#1!'5/F0(B<BR>
+      <div align=center>図１：起動<BR>
       <IMG src="e1111.jpg" width="396" height="282" border="2" align="middle"></div>
       <BR>
-      <div align=center>$B?^#2!'%a%$%s2hLL(B<BR>
+      <div align=center>図２：メイン画面<BR>
       <IMG src="e211.jpg" width="420" height="273" border="2"></div>
       <BR>
-      <div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="3">$B%G!<%?A*Br(B</A></h2>
-      $B%U%)!<%k%H%G!<%?$O(B Excel $B$N%7!<%H$+$iF~NO7A<0$H$J$j$^$9!%%G!<%?$N7A<0$O=DJ}8~$N%;%k$K;~7ONs$N%G!<%?$H$7$FF~NO$7!$#2$D$N7ONs$rA*Br$7$?>l9g$O<+F0E*$K8D?t%G!<%?!$#1$D$N7ONs$rA*Br$7$?>l9g$O%U%)!<%k%HH/8+;~9o%G!<%?$HH=CG$5$l$^$9!J?^#3!$#4!K(B
-      $B!%$?$@$7!$2?$l$N>l9g$K$*$$$F$b;~9o$ON_@Q;~9o$G$"$k$3$H$KCm0U$7$F2<$5$$!%(B<BR>
+      <div><a href="manu.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="3">データ選択</A></h2>
+      フォールトデータは Excel のシートから入力形式となります．データの形式は縦方向のセルに時系列のデータとして入力し，２つの系列を選択した場合は自動的に個数データ，１つの系列を選択した場合はフォールト発見時刻データと判断されます（図３，４）
+      ．ただし，何れの場合においても時刻は累積時刻であることに注意して下さい．<BR>
       <BR>
-      $B?^#1!$#3!$#4$NNc$G$O%a%$%s2hLL$r5/F0$9$kA0$K%G!<%?$rA*Br$$$^$9$,!$%a%$%s2hLL$r5/F08e$K%G!<%?HO0O$rA*Br$9$k$3$H$b2DG=$G$9!J%a%$%s2hLL$N@bL@;2>H!K!%(B<BR>
+      図１，３，４の例ではメイン画面を起動する前にデータを選択いますが，メイン画面を起動後にデータ範囲を選択することも可能です（メイン画面の説明参照）．<BR>
       <BR>
-      <div align=center>$B?^#3!'8D?t%G!<%?$NNc(B<BR>
+      <div align=center>図３：個数データの例<BR>
       <IMG src="tool2a.JPG" width="436" height="371" border="0"></div>
       <BR>
-      <div align=center>$B?^#4!';~9o%G!<%?$NNc(B<BR>
+      <div align=center>図４：時刻データの例<BR>
       <IMG src="tool1a.JPG" width="411" height="347" border="0"></div>
-      <BR><div><A href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</A></div>
-      <h2><IMG src="ina.gif" alt=""><A name="4">$B%b%G%kA*Br(B</A></h2>
-      $B%a%$%s2hLL$N!V(BAdd$B!W%\%?%s$r%/%j%C%/$9$k$3$H$G!$%b%G%kA*Br2hLL$,I=<($5$l$^$9!J?^#5!K!%%b%G%kA*Br2hLL>e$G?.Mj@-%b%G%k$rA*Br!J%@%V%k%/%j%C%/!K$9$k$3$H$G!$%U%)!<%k%H%G!<%?$KE,MQ$9$k%b%G%k$H$7$FDI2C$5$l!$F1;~$K%Q%i%a!<%??dDj2hLL$,I=<($5$l$^$9!%$3$3$NNc$G$O!V(BExpSRM$B!W$rA*Br$7$F$$$^$9!J?^#6!K!%$^$?!$%b%G%kA*Br2hLL>e$G!$!V(BOK$B!W%\%?%s$r%/%j%C%/$9$k$H%b%G%kA*Br2hLL$rJD$8$k$@$1$G!$E,MQ%b%G%k$,A*Br$5$l$J$$$N$GCm0U$7$F2<$5$$!%%b%G%k<0$N0lMw$O(B<a href="srats.pdf">$B$3$A$i(B</a>$B$G$9!%(B
+      <BR><div><A href="manu.html">▲ページの最初へ戻る</A></div>
+      <h2><IMG src="ina.gif" alt=""><A name="4">モデル選択</A></h2>
+      メイン画面の「Add」ボタンをクリックすることで，モデル選択画面が表示されます（図５）．モデル選択画面上で信頼性モデルを選択（ダブルクリック）することで，フォールトデータに適用するモデルとして追加され，同時にパラメータ推定画面が表示されます．ここの例では「ExpSRM」を選択しています（図６）．また，モデル選択画面上で，「OK」ボタンをクリックするとモデル選択画面を閉じるだけで，適用モデルが選択されないので注意して下さい．モデル式の一覧は<a href="srats.pdf">こちら</a>です．
       <BR>
       <BR>
-      <div align=center>$B?^#5!'%b%G%kA*Br2hLL(B<BR>
+      <div align=center>図５：モデル選択画面<BR>
       <IMG src="e31.jpg" width="481" height="339" border="2"></div>
       <BR>
-      <div align=center>$B?^#6!'%Q%i%a!<%??dDj2hLL(B<BR>
-      <IMG src="e411.jpg" width="448" height="320" border="2">$B!!!!!!(B</div>
-      <BR><div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="5">$B%Q%i%a!<%??dDj(B</A></h2>
-      $BA*Br$7$?%U%)!<%k%H%G!<%?$KE,MQ$7$?%b%G%k$r%U%#%C%H$5$;$k$?$a$K!$%Q%i%a!<%??dDj$r9T$$$^$9!%%Q%i%a!<%??dDj$O%Q%i%a!<%??dDj2hLL>e$G9T$$!$E,MQ$7$F$$$k?.Mj@-%b%G%k$=$l$>$l$,?^#6$K<($9$h$&$J2hLL$r;}$C$F$$$^$9!%%Q%i%a!<%??dDj2hLL$G$OM=$aE,Ev$J=i4|%Q%i%a!<%?$,%;%C%H$5$l$F$$$k$N$G!$DL>o$O$=$N$^$^!V(BEstimate$B!W%\%?%s$r2!$9$3$H$K$h$C$F%G!<%?$K%U%#%C%H$9$k%Q%i%a!<%?$r;;=P$7$^$9!J?^#7!K!%;;=P$5$l$?%Q%i%a!<%?$OCf1{$N9`L\$K%;%C%H$5$l$^$9!J?^#8!K!%$3$3$NNc$G$O!V(BNo.
-      Faults$B!W$H!V(BScale (Inverse)$B!W$K7k2L!J?dDj$5$l$?%Q%i%a!<%?!K$,%;%C%H$5$l$F$$$^$9!J?^#8!K!%$3$N>uBV$+$i$5$i$K!V(BEstimate$B!W%\%?%s$r2!$9$H!$%;%C%H$5$l$?%Q%i%a!<%?$r=i4|CM$H$7$F?dDj$rB3$1$k$3$H$K$J$j$^$9!%(B<BR>
+      <div align=center>図６：パラメータ推定画面<BR>
+      <IMG src="e411.jpg" width="448" height="320" border="2">　　　</div>
+      <BR><div><a href="manu.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="5">パラメータ推定</A></h2>
+      選択したフォールトデータに適用したモデルをフィットさせるために，パラメータ推定を行います．パラメータ推定はパラメータ推定画面上で行い，適用している信頼性モデルそれぞれが図６に示すような画面を持っています．パラメータ推定画面では予め適当な初期パラメータがセットされているので，通常はそのまま「Estimate」ボタンを押すことによってデータにフィットするパラメータを算出します（図７）．算出されたパラメータは中央の項目にセットされます（図８）．ここの例では「No.
+      Faults」と「Scale (Inverse)」に結果（推定されたパラメータ）がセットされています（図８）．この状態からさらに「Estimate」ボタンを押すと，セットされたパラメータを初期値として推定を続けることになります．<BR>
       <BR>
-      $B2hLL>e$N!V(BFix$B!W$O%A%'%C%/$rF~$l$k$3$H$G!$8=:_F~NO$5$l$F$$$kCM$K%Q%i%a!<%?$r8GDj$7$^$9!%$D$^$j!$4{$KCM$,$o$+$C$F$$$k%Q%i%a!<%?$,$"$k>l9g$O%f!<%6$,D>@\CM$rF~NO$7$F!V(BFix$B!W$K%A%'%C%/$rF~$l$k$3$H$G!$?dDj$K$h$kCM$NJQ2=$,$J$/$J$j$^$9!J(BGamma
-      SRM$B$J$I4{$K!V(BFix$B!W$K%A%'%C%/$,F~$C$F$$$k%b%G%k$b$"$k$N$GCm0U$7$F2<$5$$!K!%(B<BR>
+      画面上の「Fix」はチェックを入れることで，現在入力されている値にパラメータを固定します．つまり，既に値がわかっているパラメータがある場合はユーザが直接値を入力して「Fix」にチェックを入れることで，推定による値の変化がなくなります（Gamma
+      SRMなど既に「Fix」にチェックが入っているモデルもあるので注意して下さい）．<BR>
       <BR>
-      $B$^$?!$!V(BIteration$B!W$O?dDj%"%k%4%j%:%`$K$*$1$k7+$jJV$72s?t$G!$0l2s!V(BEstimate$B!W%\%?%s$r2!$9Kh$K2?2s7W;;$9$k$+$r<($7$F$$$^$9!J%G%U%)%k%H$G$O(B
-      1000 $B2s$G$9!K!%:G=*E*$K$-$A$s$H%Q%i%a!<%?$,?dDj$G$-$?$+$I$&$+$O2hLL>eIt$N!V(BLog
-      Likelihood$B!W!JBP?t$f$&EY!K$GH=CG$7$^$9!%$D$^$j!V(BEstimate$B!W%\%?%s$r2!$7$F$b!V(BLog
-      Likelihood$B!W$NCM$,JQ$o$i$J$/$J$k$3$H$G!J$b$7$/$O?dDj$5$l$?%Q%i%a!<%?$,JQ$o$i$J$/$J$k$3$H$G!K?dDj$,40N;$7$?$+$I$&$+$rH=CG$7$^$9!%(B<BR>
+      また，「Iteration」は推定アルゴリズムにおける繰り返し回数で，一回「Estimate」ボタンを押す毎に何回計算するかを示しています（デフォルトでは
+      1000 回です）．最終的にきちんとパラメータが推定できたかどうかは画面上部の「Log
+      Likelihood」（対数ゆう度）で判断します．つまり「Estimate」ボタンを押しても「Log
+      Likelihood」の値が変わらなくなることで（もしくは推定されたパラメータが変わらなくなることで）推定が完了したかどうかを判断します．<BR>
       <BR>
-      $B"(%U%)!<%k%H%G!<%?$K$h$C$F$O!V(BEstimate$B!W%\%?%s$r2!$9Kh$K>o$K?dDj$5$l$?%Q%i%a!<%?$,JQ2=$9$k>l9g$,$"$j$^$9$,!$$3$l$O!V(BLog
-      Likelihood$B!W$NCM$+$i%f!<%6$,$I$3$G?dDj$rBG$A@Z$k$+H=CG$7$F2<$5$$!%(B<BR>
+      ※フォールトデータによっては「Estimate」ボタンを押す毎に常に推定されたパラメータが変化する場合がありますが，これは「Log
+      Likelihood」の値からユーザがどこで推定を打ち切るか判断して下さい．<BR>
       <BR>
-      $B?dDj$,40N;$7$?$i!V(BClose$B!W%\%?%s$r2!$7$F%Q%i%a!<%??dDj2hLL$rJD$8$k$H!$%b%G%kA*Br2hLL!J$"$k$$$O%a%$%s2hLL!K$KLa$j$^$9!%$3$3$+$iB3$1$F?7$?$J%b%G%k$rE,MQ$9$k$3$H$b2DG=$G$9!%$^$?!$%Q%i%a!<%??dDj2hLL$O%a%$%s2hLL$+$iE,MQ$5$l$F$$$k%b%G%k$r%j%9%H$+$iA*Br!J%@%V%k%/%j%C%/!K$9$k$3$H$GI=<($5$;$k$3$H$b2DG=$G$9!%(B
+      推定が完了したら「Close」ボタンを押してパラメータ推定画面を閉じると，モデル選択画面（あるいはメイン画面）に戻ります．ここから続けて新たなモデルを適用することも可能です．また，パラメータ推定画面はメイン画面から適用されているモデルをリストから選択（ダブルクリック）することで表示させることも可能です．
       <BR>
       <BR>
-      <div align=center>$B?^#7!'?dDj$NMM;R(B<BR>
+      <div align=center>図７：推定の様子<BR>
       <IMG src="e611.jpg" width="433" height="292" border="2"></div>
       <BR>
-      <div align=center>$B?^#8!'?dDj8e$N%Q%i%a!<%??dDj2hLL(B<BR>
-      <IMG src="e51.jpg" width="508" height="363" border="2">$B!!!!(B</div>
+      <div align=center>図８：推定後のパラメータ推定画面<BR>
+      <IMG src="e51.jpg" width="508" height="363" border="2">　　</div>
       <BR>
-      <div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="6">$B?.Mj@-I>2A(B</A></h2>
-      SRATS$B$NFCD'$N0l$D$H$7$F!$J#?t$N?.Mj@-%b%G%k$rF1;~$KE,MQ$9$k$3$H$,2DG=$G$9!%?.Mj@-%b%G%k$rE,MQ$7%Q%i%a!<%??dDj$r9T$&$3$H$K$h$j!$%=%U%H%&%'%"$N?.Mj@-$K4X$9$k$$$/$D$+$N<\EY$r%a%$%s2hLL>e$G3NG'$9$k$3$H$,$G$-$^$9!J?^#9!K!%$3$3$NNc$G$O(B
-      ExpSRM $B$H(B Littlewood SRM $B$NFs$D$N%b%G%k$rE,MQ$7$F$$$^$9!%%j%9%H$K$"$k%b%G%k$rA*Br!J%7%s%0%k%/%j%C%/!K$9$k$3$H$K$h$C$F!$BP1~$9$k<\EY$,%a%$%s2hLL$N1&B&$KI=<($5$l$^$9!%(B<BR>
+      <div><a href="manu.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="6">信頼性評価</A></h2>
+      SRATSの特徴の一つとして，複数の信頼性モデルを同時に適用することが可能です．信頼性モデルを適用しパラメータ推定を行うことにより，ソフトウェアの信頼性に関するいくつかの尺度をメイン画面上で確認することができます（図９）．ここの例では
+      ExpSRM と Littlewood SRM の二つのモデルを適用しています．リストにあるモデルを選択（シングルクリック）することによって，対応する尺度がメイン画面の右側に表示されます．<BR>
       <BR>
-      $B%a%$%s2hLL$N1&B&$K$"$k!V(BGoodness of Fit$B!W$O%b%G%k$,%G!<%?$K$I$l$/$i$$E,9g$7$F$$$k$+$r<($9;XI8$G!$!V(BAIC$B!W!$!V(BMSE$B!W!$!V(BKS Distance$B!W$NCM$,>.$5$$$b$N$[$I%G!<%?$K$h$/%U%#%C%H$7$F$$$k$3$H$r<($7$F$$$^$9!%$3$l$i$O!$:G=*E*$KJ#?tE,MQ$7$??.Mj@-%b%G%k$N$&$A!$$I$l$r:NMQ$9$k$+$rH=CG$9$k$?$a$N;XI8$H$7$FMxMQ$5$l$^$9!%$^$?!$!V(BSoftware Metircs$B!W$K$O?.Mj@-$K4X$9$k<\EY$H$7$F!V(BTotal$B!W!$!V(BFFProb$B!W!$!V(BMTBF$B!W!$!V(BBe X Life$B!W$,I=<($5$l$^$9!%$3$l$i$O$=$l$>$l<!$NNL$K4X$9$kM=B,CM$H$J$C$F$$$^$9!%(B
+      メイン画面の右側にある「Goodness of Fit」はモデルがデータにどれくらい適合しているかを示す指標で，「AIC」，「MSE」，「KS Distance」の値が小さいものほどデータによくフィットしていることを示しています．これらは，最終的に複数適用した信頼性モデルのうち，どれを採用するかを判断するための指標として利用されます．また，「Software Metircs」には信頼性に関する尺度として「Total」，「FFProb」，「MTBF」，「Be X Life」が表示されます．これらはそれぞれ次の量に関する予測値となっています．
       <UL>
-        <LI>Total: $BBP>]$H$9$k%=%U%H%&%'%"$K@x:_$9$kAm%U%)!<%k%H?t(B
-        <LI>FFProb: $B8=;~E@$GBP>]$H$9$k%=%U%H%&%'%"$K%U%)!<%k%H$,B8:_$9$k3NN((B
-        <LI>MTBF: $B<!$N%U%)!<%k%H$,H/8+$5$l$k$^$G$N;~4V(B
-        <LI>Be X Life: $B<!$N%U%)!<%k%H$,H/8+$5$l$k3NN($,#0!%#9$H$J$k;~4V(B<BR>
-        $B!J$=$N;~4V$^$G$K#1$D0J>e$N%U%)!<%k%H$,H/8+$5$l$k3NN($,#93d!K(B
+        <LI>Total: 対象とするソフトウェアに潜在する総フォールト数
+        <LI>FFProb: 現時点で対象とするソフトウェアにフォールトが存在する確率
+        <LI>MTBF: 次のフォールトが発見されるまでの時間
+        <LI>Be X Life: 次のフォールトが発見される確率が０．９となる時間<BR>
+        （その時間までに１つ以上のフォールトが発見される確率が９割）
       </UL>
       <BR>
-      <div align=center>$B?^#9!'%a%$%s2hLL>e$G$N%b%G%kHf3S(B<BR>
-      <IMG src="e71.jpg" width="468" height="306" border="2">$B!!!!!!(B</div>
+      <div align=center>図９：メイン画面上でのモデル比較<BR>
+      <IMG src="e71.jpg" width="468" height="306" border="2">　　　</div>
       <BR>
-      <div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="7">$B%l%]!<%H=PNO(B</A></h2>
-      SRATS $B$G$O>\:Y$J7k2L$r(B Excel $B%7!<%H$K=PNO$9$k$3$H$,$G$-$^$9!%%a%$%s2hLL>e$K$"$k!V(BReport$B!W%\%?%s$r%/%j%C%/$9$k$H%l%]!<%H=PNO2hLL$,I=<($5$l$^$9!J?^#1#0!K!%$3$3$G$O7k2L$r=PNO$9$k%7!<%H$NL>>N!$$*$h$SN_@Q%U%)!<%k%H?t!J!V(BMake
-      Graph of Mean Value Func.$B!W!K$H?.MjEY!J!V(BMake Graph of Reliability$B!W!K$N%0%i%U$r:n@.$9$k$+$I$&$+$r%A%'%C%/$7$^$9!%%l%]!<%H=PNO2hLL>e$N!V(BOK$B!W%\%?%s$r2!$9$3$H$G%7!<%H$X$N=PNO!J?^#1#1!K$*$h$S%0%i%U$N:n@.!J?^#1#2!$?^#1#3!K$r9T$$$^$9!%(B<BR>
+      <div><a href="manu.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="7">レポート出力</A></h2>
+      SRATS では詳細な結果を Excel シートに出力することができます．メイン画面上にある「Report」ボタンをクリックするとレポート出力画面が表示されます（図１０）．ここでは結果を出力するシートの名称，および累積フォールト数（「Make
+      Graph of Mean Value Func.」）と信頼度（「Make Graph of Reliability」）のグラフを作成するかどうかをチェックします．レポート出力画面上の「OK」ボタンを押すことでシートへの出力（図１１）およびグラフの作成（図１２，図１３）を行います．<BR>
     <BR>
-      <div align=center>$B?^#1#0!'%l%]!<%H=PNO2hLL(B<BR>
+      <div align=center>図１０：レポート出力画面<BR>
       <IMG src="e81.jpg" width="438" height="283" border="2"></div>
     <BR>
-      <div align=center>$B?^#1#1!'%l%]!<%H$NNc(B<BR>
+      <div align=center>図１１：レポートの例<BR>
       <IMG src="e91.jpg" width="433" height="403" border="2"></div>
     <BR>
-      <div align=center>$B?^#1#2!'N_@Q%U%)!<%k%H?t$N%0%i%U(B<BR>
+      <div align=center>図１２：累積フォールト数のグラフ<BR>
       <IMG src="e1011.jpg" width="457" height="319" border="2"></div>
     <BR>
-      <div align=center>$B?^#1#3!'%=%U%H%&%'%"?.MjEY(B<BR>
+      <div align=center>図１３：ソフトウェア信頼度<BR>
       <IMG src="e111-g.jpg" width="453" height="348" border="2"></div>
       <BR>
-      <div><a href="manu.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
+      <div><a href="manu.html">▲ページの最初へ戻る</a></div>
       </td></tr>
 </table>
 </BODY></HTML>

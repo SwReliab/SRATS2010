@@ -1,8 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
 <TITLE>SRATS:Software Reliability Assessment Tool on Spreadsheet Software</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
-<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 8.0.0.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <META http-equiv="Content-Style-Type" content="text/css">
 <LINK rel="stylesheet" type="text/css" href="base.css">
 </HEAD>
@@ -15,88 +14,88 @@
 <li><a href="home.html">SRATS TOP</a>
 </ul>
 <ul>
-<li><a href="intro.html">$B35MW(B</a>
-<li><a href="install.html">$B%$%s%9%H!<%k(B</a>
-        <li><a href="manu.html">$B4pK\A`:n(B</a>
-        <li><A href="basic.html">$B?.Mj@-$N4pAC(B</A>
-        <li><A href="example.html">$B%D!<%k$N;HMQNc(B</a>
-        <li><A href="words.html">$B?.Mj@-MQ8l=8(B</A>
-        <li><A href="ref.html">$B;29MJ88%(B</A>
+<li><a href="intro.html">概要</a>
+<li><a href="install.html">インストール</a>
+        <li><a href="manu.html">基本操作</a>
+        <li><A href="basic.html">信頼性の基礎</A>
+        <li><A href="example.html">ツールの使用例</a>
+        <li><A href="words.html">信頼性用語集</A>
+        <li><A href="ref.html">参考文献</A>
       </ul>
-<h4>$B"'L\<!(B</h4>
+<h4>▼目次</h4>
 <ul>
-        <li><A href="example.html#1">$B%U%)!<%k%H%G!<%?(B</A>
-        <li><A href="example.html#2">$B%G!<%?$N@07A(B</A>
-        <li><A href="example.html#3">$B%b%G%kA*Br(B</A>
-        <li><A href="example.html#4">$BI>2A$H4IM}(B</A>
+        <li><A href="example.html#1">フォールトデータ</A>
+        <li><A href="example.html#2">データの整形</A>
+        <li><A href="example.html#3">モデル選択</A>
+        <li><A href="example.html#4">評価と管理</A>
       </ul>
 </td>
 <td valign=top class=info>
 
-<h1>$B%D!<%k$N;HMQNc(B</h1>
-<h2><img src="ina.gif" alt=""><A name="1">$B%U%)!<%k%H%G!<%?(B</A></h2>
-      $B$3$3$NNc$G$O(B<A href="http://www.kke.co.jp/">$B!J3t!K9=B$7W2h8&5f=j(B</A>$B$,:n@.$7$F$$$k!V(B<A href="http://www.kke.co.jp/srgm/">$B?.MjEY@.D96J@~:n@.%D!<%k(B</A>$B!W$GG[I[$5$l$$$k%5%s%W%k%G!<%?$r;HMQ$7$^$9!%%U%)!<%k%H%G!<%?$O(B Excel $B>e$G?^#1$N$h$&$K$^$H$a$i$l$F$$$k$b$N$H$7$^$9!J%U%)!<%k%H%G!<%?%5%s%W%k$N(B<A href="sample_data.xls">$B%@%&%s%m!<%I(B</A>$B!K!%(B<BR>
+<h1>ツールの使用例</h1>
+<h2><img src="ina.gif" alt=""><A name="1">フォールトデータ</A></h2>
+      ここの例では<A href="http://www.kke.co.jp/">（株）構造計画研究所</A>が作成している「<A href="http://www.kke.co.jp/srgm/">信頼度成長曲線作成ツール</A>」で配布されいるサンプルデータを使用します．フォールトデータは Excel 上で図１のようにまとめられているものとします（フォールトデータサンプルの<A href="sample_data.xls">ダウンロード</A>）．<BR>
       <BR>
-      $B$3$3$NNc$G$O!$%U%)!<%k%H%G!<%?$OF|C10L$N=87W$G$"$j!$$=$l$>$l<!$N9`L\$+$i$J$C$F$$$^$9!%(B
+      ここの例では，フォールトデータは日単位の集計であり，それぞれ次の項目からなっています．
       <UL>
-        <LI>$B%F%9%HF|IU(B
-        <LI>$B%F%9%H9)?t(B
-        <LI>$BH/8+>c32?t(B
-        <LI>$B=$@5>c32?t(B
-        <LI>$B>C2=$7$?%F%9%H9`L\?t(B
+        <LI>テスト日付
+        <LI>テスト工数
+        <LI>発見障害数
+        <LI>修正障害数
+        <LI>消化したテスト項目数
       </UL>
       <BR>
-      <div align=center>$B?^#1!'%U%)!<%k%H%G!<%?(B<BR>
+      <div align=center>図１：フォールトデータ<BR>
       <IMG src="e71-5.jpg" width="554" height="379" border="2"></div>
       <BR>
-      <div><a href="example.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="2">$B%G!<%?$N@07A(B</A></h2>
-      SRATS $B$G$ON_@Q;~9o!J9)?t!K$rMxMQ$9$k$N$G!$(BExcel $B>e$G%U%)!<%k%H%G!<%?$N@07A$r9T$$$^$9!%$3$3$NNc$G$O!$F|C10L$N%F%9%H9)?t$+$iN_@Q$N%F%9%H9)?t$r:n@.$7$F$$$^$9!J?^#2!K!%$^$?!$F|C10L$N>C2=%F%9%H9`L\?t$+$iN_@Q>C2=%F%9%H9`L\?t$r:n@.$7$FMxMQ$9$k$3$H$b2DG=$G$9!%(B<BR>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="2">データの整形</A></h2>
+      SRATS では累積時刻（工数）を利用するので，Excel 上でフォールトデータの整形を行います．ここの例では，日単位のテスト工数から累積のテスト工数を作成しています（図２）．また，日単位の消化テスト項目数から累積消化テスト項目数を作成して利用することも可能です．<BR>
       <BR>
-      $B<!$K!$9)?t$HF|C10L$NH/8+%U%)!<%k%H?t$K4X$9$k#2Ns$rA*Br$7$F%a%K%e!<%P!<$N(B
-      SRATS $B$+$i(B RunSRATS $B$rA*Br$7$^$9!%(B
+      次に，工数と日単位の発見フォールト数に関する２列を選択してメニューバーの
+      SRATS から RunSRATS を選択します．
     <BR>
       <BR>
-      <div align=center>$B?^#2!'%G!<%?@07A(B<BR>
+      <div align=center>図２：データ整形<BR>
       <IMG src="e811-4.jpg" width="498" height="375" border="2"></div>
       <BR>
-      <div><a href="example.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="3">$B%b%G%kA*Br(B</A></h2>
-      $BA*Br$7$?%U%)!<%k%H%G!<%?$KE,MQ$9$k%b%G%k$rA*Br$7$^$9!%0lHLE*$K$O!$:G$b4pK\E*$J!V(BExponential
-      SRM$B!W$r:G=i$KA*Br!u%Q%i%a!<%??dDj$r9T$$$^$9!%<!$K(B Exponential SRM $B$NE,9gEY(B
-      AIC $B$HBPHf$7$J$,$i!$B>$N%b%G%k$rDI2C$7$F$$$-$^$9!%$3$N$H$-$N:n6H$O(B
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="3">モデル選択</A></h2>
+      選択したフォールトデータに適用するモデルを選択します．一般的には，最も基本的な「Exponential
+      SRM」を最初に選択＆パラメータ推定を行います．次に Exponential SRM の適合度
+      AIC と対比しながら，他のモデルを追加していきます．このときの作業は
       <OL>
-        <LI>$B!V(BAdd$B!W$G%b%G%k$rDI2C(B
-        <LI>AIC $B$GE,9gEY$NHf3S(B
-        <LI>AIC $B$N$h$j>.$5$$$b$N$rA*Br$7!$B>$r!V(BRemove$B!W$G:o=|(B
+        <LI>「Add」でモデルを追加
+        <LI>AIC で適合度の比較
+        <LI>AIC のより小さいものを選択し，他を「Remove」で削除
       </OL>
-      $B$H$J$j$^$9!%$D$^$j!$:G$b(B AIC $B$,>.$5$/$J$k%b%G%k$rC5$7$^$9!%$3$3$NNc$G$O:G=*E*$K(B
-      Normal SRM $B$,:G$b>.$5$$(B AIC $B$r$b$D%b%G%k$H$7$FA*Br$5$l$^$9!J?^#3!K!%(B <BR>
+      となります．つまり，最も AIC が小さくなるモデルを探します．ここの例では最終的に
+      Normal SRM が最も小さい AIC をもつモデルとして選択されます（図３）． <BR>
           <BR>
-      <div align=center>$B?^#3!'%b%G%kHf3S!uA*Br(B<BR>
+      <div align=center>図３：モデル比較＆選択<BR>
       <IMG src="b111.jpg" width="551" height="371" border="2"></div>
 <BR>
-      <div><a href="example.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><IMG src="ina.gif" alt=""><A name="4">$BI>2A$H4IM}(B</A></h2>
-      $B%b%G%k$NA*Br$,40N;$7$?8e$O!$7k2L$r(B Excel $B%7!<%H$X=PNO$7$^$9!J?^#4!K!%$3$3$G$NI>2A$O(B
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
+      <h2><IMG src="ina.gif" alt=""><A name="4">評価と管理</A></h2>
+      モデルの選択が完了した後は，結果を Excel シートへ出力します（図４）．ここでの評価は
       <UL>
-        <LI>$B8=;~E@$G;D$C$F$$$k%U%)!<%k%H$,(B 0.17 $B8D!J(B=96.17-96$B!K(B
-        <LI>$B8=;~E@$G%U%)!<%k%H$,$9$Y$F=|5n$5$l$F$$$k3NN($,(B 0.84
-        <LI>$B<!$N%U%)!<%k%H$,H/8+$5$l$k$J$i$P(B 17.8 $B?M;~!J%F%9%H9)?t!K8e(B
-        <LI>$B<!$N%U%)!<%k%H$,H/8+$5$l$k$J$i$P(B 96.2 $B?M;~8e$^$G$KH/8+$5$l$k3NN($,(B 0.9
+        <LI>現時点で残っているフォールトが 0.17 個（=96.17-96）
+        <LI>現時点でフォールトがすべて除去されている確率が 0.84
+        <LI>次のフォールトが発見されるならば 17.8 人時（テスト工数）後
+        <LI>次のフォールトが発見されるならば 96.2 人時後までに発見される確率が 0.9
       </UL>
-      $B$H$J$j$^$9!%%F%9%H4IM}<T$O$3$N;XI8$r$b$H$K(B
+      となります．テスト管理者はこの指標をもとに
       <UL>
-        <LI>$B3:Ev%=%U%H%&%'%"$O==J,$J?.MjEY$rC#@.$7$F$$$k$N$G!$DI2C$N%F%9%H$OI,MW$H$7$J$$(B
-        <LI>17.8 $B?M;~$"$k$$$O(B 96.2 $B?M;~$NDI2C%F%9%H$r9T$&(B
+        <LI>該当ソフトウェアは十分な信頼度を達成しているので，追加のテストは必要としない
+        <LI>17.8 人時あるいは 96.2 人時の追加テストを行う
       </UL>
-      $B$J$I$NH=CG$r9T$$$^$9!%(B
+      などの判断を行います．
       <BR>
       <BR>
-      <div align=center>$B?^#4!'I>2A7k2L(B<BR>
+      <div align=center>図４：評価結果<BR>
       <IMG src="b511.jpg" width="499" height="337" border="2"></div>
       <BR>
-      <div><a href="example.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
+      <div><a href="example.html">▲ページの最初へ戻る</a></div>
 </td></tr>
 </table>
 </BODY></HTML>

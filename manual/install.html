@@ -1,8 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
 <TITLE>SRATS:Software Reliability Assessment Tool on Spreadsheet Software</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
-<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 8.0.0.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <META http-equiv="Content-Style-Type" content="text/css">
 <LINK rel="stylesheet" type="text/css" href="base.css">
 </HEAD>
@@ -15,74 +14,74 @@
 <li><a href="home.html">SRATS TOP</a>
 </ul>
 <ul>
-<li><a href="intro.html">$B35MW(B</a>
-<li><a href="install.html">$B%$%s%9%H!<%k(B</a>
-<li><a href="manu.html">$B4pK\A`:n(B</a>
-        <li><A href="basic.html">$B?.Mj@-$N4pAC(B</A>
-        <li><A href="example.html">$B%D!<%k$N;HMQNc(B</a>
-        <li><A href="words.html">$B?.Mj@-MQ8l=8(B</A>
-        <li><A href="ref.html">$B;29MJ88%(B</A>
+<li><a href="intro.html">概要</a>
+<li><a href="install.html">インストール</a>
+<li><a href="manu.html">基本操作</a>
+        <li><A href="basic.html">信頼性の基礎</A>
+        <li><A href="example.html">ツールの使用例</a>
+        <li><A href="words.html">信頼性用語集</A>
+        <li><A href="ref.html">参考文献</A>
       </ul>
-<h4>$B"'L\<!(B</h4>
+<h4>▼目次</h4>
 <ul>
-<li><A href="install.html#1">$BF0:n4D6-(B</A>
-        <li><A href="install.html#2">$B%$%s%9%H!<%k(B</A>
-        <li><A href="install.html#3">$B%"%s%$%s%9%H!<%k(B</A>
+<li><A href="install.html#1">動作環境</A>
+        <li><A href="install.html#2">インストール</A>
+        <li><A href="install.html#3">アンインストール</A>
       </ul>
       </td>
 <td valign=top class=info>
 
-<h1>$B%@%&%s%m!<%I(B</h1>
+<h1>ダウンロード</h1>
 
-<a href="http://www.rel.hiroshima-u.ac.jp/okamu/SRATS/srats.zip">SRATS (ZIP$B%U%!%$%k(B, 115KB$B!K(B</a>
+<a href="http://www.rel.hiroshima-u.ac.jp/okamu/SRATS/srats.zip">SRATS (ZIPファイル, 115KB）</a>
 
-<h1>$B%$%s%9%H!<%k(B</h1>
+<h1>インストール</h1>
 
-<h2><img src="ina.gif" alt=""><A name="1">$BF0:n4D6-(B</A></h2>
-<h3>$B%O!<%I%&%'%"9=@.(B</h3>
-      $B%=%U%H%&%'%"9=@.$K<($9(BOS$B$,F0:n$9$k%Q!<%=%J%k%3%s%T%e!<%?$,I,MW$G$9!%(B
-      <h3>$B%=%U%H%&%'%"9=@.(B</h3>
+<h2><img src="ina.gif" alt=""><A name="1">動作環境</A></h2>
+<h3>ハードウェア構成</h3>
+      ソフトウェア構成に示すOSが動作するパーソナルコンピュータが必要です．
+      <h3>ソフトウェア構成</h3>
       <OL>
         <LI>OS<BR>
-        $B0J2<$N(BOS$B$G$NF0:n$,3NG'$5$l$F$$$^$9!%(B
+        以下のOSでの動作が確認されています．
         <UL>
           <LI>Microsoft Windows 2000 Professional
           <LI>Microsoft Windows XP Home Edition
           <LI>Microsoft Windows XP Professional Edition
         </UL>
-        <LI>$B%"%W%j%1!<%7%g%s(B<BR>
-        $B0J2<$N%"%W%j%1!<%7%g%s$G$NF0:n$,3NG'$5$l$F$$$^$9!%(B
+        <LI>アプリケーション<BR>
+        以下のアプリケーションでの動作が確認されています．
         <UL>
           <LI>Microsoft Excel 2000
           <LI>Microsoft Excel 2002
           <LI>Microsoft Excel 2003
         </UL>
       </OL>
-      <br><div><a href="install.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-      <h2><img src="ina.gif" alt=""><A name="2">$B%$%s%9%H!<%k(B</A></h2>
-      ZIP$B%U%!%$%k$r%@%&%s%m!<%I8e$K0J2<$N<j=g$G%$%s%9%H!<%k$7$^$9!%(B<BR>
+      <br><div><a href="install.html">▲ページの最初へ戻る</a></div>
+      <h2><img src="ina.gif" alt=""><A name="2">インストール</A></h2>
+      ZIPファイルをダウンロード後に以下の手順でインストールします．<BR>
       <OL>
-        <LI>ZIP $B%U%!%$%k$rE,Ev$J>l=j$G2rE`$7$^$9!%(B<BR>
-        $B!J2rE`$7$?%U%!%$%k72$K(B SRMDLL.dll $B$H(B SRATS.xla $B$"$k$3$H$r3NG'$7$F2<$5$$!K(B
-        <LI>$B%"%I%$%s%U%)%k%@!J(B\Documents and Settings\$B!J%f!<%6L>!K(B\Application Data\Microsoft\AddIns$B!K$K(B
-        SRMDLL.dll $B$H(B SRATS.xla $B$r%3%T!<$7$^$9!%(B<BR>
-        $B!J%3%T!<8e$O2rE`$7$?%U%!%$%k72$r>C5n$7$F$b$+$^$$$^$;$s!K(B
-        <LI>Excel $B$r5/F0$7$^$9!%(B
-        <LI>Excel $B$N%a%K%e!<%P!<$+$i(B $B%D!<%k(B -&gt; $B%"%I%$%s(B... $B$rA*Br$7$^$9!%(B 
-        <LI>SRATS $B$K%A%'%C%/$rF~$l$^$9!%(B
+        <LI>ZIP ファイルを適当な場所で解凍します．<BR>
+        （解凍したファイル群に SRMDLL.dll と SRATS.xla あることを確認して下さい）
+        <LI>アドインフォルダ（\Documents and Settings\（ユーザ名）\Application Data\Microsoft\AddIns）に
+        SRMDLL.dll と SRATS.xla をコピーします．<BR>
+        （コピー後は解凍したファイル群を消去してもかまいません）
+        <LI>Excel を起動します．
+        <LI>Excel のメニューバーから ツール -&gt; アドイン... を選択します． 
+        <LI>SRATS にチェックを入れます．
       </OL>
-      $B>e5-$NA`:n$G%a%K%e!<%P!<$K(B SRATS $B$N9`L\$,8=$l$l$P%$%s%9%H!<%k40N;$G$9!%(B
+      上記の操作でメニューバーに SRATS の項目が現れればインストール完了です．
       <BR>
       <br>
-      <div><a href="install.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
-<h2><img src="ina.gif" alt=""><A name="3">$B%"%s%$%s%9%H!<%k(B</A></h2>
+      <div><a href="install.html">▲ページの最初へ戻る</a></div>
+<h2><img src="ina.gif" alt=""><A name="3">アンインストール</A></h2>
       <OL>
-        <LI>Excel $B$r5/F0$7$^$9!%(B
-        <LI>Excel $B$N%a%K%e!<%P!<$+$i(B $B%D!<%k(B -&gt; $B%"%I%$%s(B... $B$rA*Br$7$^$9!%(B
-        <LI>SRATS $B$N%A%'%C%/$r30$7$^$9!%(B
-        <LI>$B%$%s%9%H!<%k$N<j=g#2$G%3%T!<$7$?(B DLL $B%U%!%$%k$H(B XLA $B%U%!%$%k$r>C5n$7$^$9!%(B
+        <LI>Excel を起動します．
+        <LI>Excel のメニューバーから ツール -&gt; アドイン... を選択します．
+        <LI>SRATS のチェックを外します．
+        <LI>インストールの手順２でコピーした DLL ファイルと XLA ファイルを消去します．
       </OL>
-      <br><div><a href="install.html">$B"%%Z!<%8$N:G=i$XLa$k(B</a></div>
+      <br><div><a href="install.html">▲ページの最初へ戻る</a></div>
       </td></tr>
 </table>
 </BODY></HTML>

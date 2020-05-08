@@ -1,8 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
 <TITLE>SRATS:Software Reliability Assessment Tool on Spreadsheet Software</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
-<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 8.0.0.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <META http-equiv="Content-Style-Type" content="text/css">
 <LINK rel="stylesheet" type="text/css" href="base.css">
 </HEAD>
@@ -15,77 +14,77 @@
 <li><a href="home.html">SRATS TOP</a>
 </ul>
 <ul>
-<li><a href="intro.html">$B35MW(B</a>
-<li><a href="install.html">$B%$%s%9%H!<%k(B</a>
-<li><a href="manu.html">$B4pK\A`:n(B</a>
-        <li><A href="basic.html">$B?.Mj@-$N4pAC(B</A>
-        <li><A href="example.html">$B%D!<%k$N;HMQNc(B</a>
-        <li><A href="words.html">$B?.Mj@-MQ8l=8(B</A>
-        <li><A href="ref.html">$B;29MJ88%(B</A>
+<li><a href="intro.html">概要</a>
+<li><a href="install.html">インストール</a>
+<li><a href="manu.html">基本操作</a>
+        <li><A href="basic.html">信頼性の基礎</A>
+        <li><A href="example.html">ツールの使用例</a>
+        <li><A href="words.html">信頼性用語集</A>
+        <li><A href="ref.html">参考文献</A>
       </ul>
       </td>
 <td valign=top class=info>
 
-<h1>$BMQ8l=8(B</h1>
+<h1>用語集</h1>
 
-      <h2><img src="ina.gif" alt=""><A name="1">$B0lHLE*$JE}7WMQ8l(B</A></h2>
+      <h2><img src="ina.gif" alt=""><A name="1">一般的な統計用語</A></h2>
       <DL>
         <DT>AIC
-        <DD>Akaike Information Criterion$B$NN,!#(BSRM $B$NA*Br5,=`$N$R$H$D$K>pJsNL5,=`$,$"$k$,!"$=$NCf$G$b:G$b$h$/MQ$$$i$l$F$$$k$b$N$N$R$H$D$G$"$k!#(B<BR>
-        $B4pK\8x<0!'!]#2!_!J%b%G%k$N:GBgBP?tL`EY!K!\(B2$B!_!J%b%G%k$N<+M3%Q%i%a!<%??t!K(B<BR>
-        $B%b%G%k$rHf3S$9$k:]$K$O!"(BAIC$B$,$h$j>.$5$$%b%G%k$,%G!<%?$K$h$jNI$$%U%#%C%H$rM?$($F$$$k$H$5$l$k!#$7$+$7!"(BAIC$B$OAjBPE*I>2A4p=`$G$"$k$N$G!"Ds<($5$l$?8uJd$NCf$G$NM%Nt$r<($9$b$N$K$9$.$J$$!#(B
+        <DD>Akaike Information Criterionの略。SRM の選択規準のひとつに情報量規準があるが、その中でも最もよく用いられているもののひとつである。<BR>
+        基本公式：−２×（モデルの最大対数尤度）＋2×（モデルの自由パラメータ数）<BR>
+        モデルを比較する際には、AICがより小さいモデルがデータにより良いフィットを与えているとされる。しかし、AICは相対的評価基準であるので、提示された候補の中での優劣を示すものにすぎない。
         <DT>Be X life
-        <DD>$B8N>c3NN($,(B10%$B$K$J$k;~4V!#(B
-        <DT>EM $B%"%k%4%j%:%`(B
-        <DD>$B:G5^9_2<K!$HF1MM!"2r$rC`<!2~NI$7$F$$$/7+$jJV$7C5:w$N%"%k%4%j%:%`!#(B
+        <DD>故障確率が10%になる時間。
+        <DT>EM アルゴリズム
+        <DD>最急降下法と同様、解を逐次改良していく繰り返し探索のアルゴリズム。
         <DT>Exp SRM (Goel and Okumoto)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,;X?tJ,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布が指数分布に従うモデル。
         <DT>ExtremeValueMax SRM (Gompertz)
-        <DD>$BJ?6QCM4X?t$,%4%s%Z%k%D6J@~$K$J$k%b%G%k!#(B
+        <DD>平均値関数がゴンペルツ曲線になるモデル。
         <DT>ExtremeValueMin SRM (Gompertz)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%4%s%Z%k%DJ,I[$K=>$&%b%G%k!#(B
-        <DT>Fault-Free $B3NN(!J(BFFprob.$B!K(B
-        <DD>$BG$0U$N;~9o$K$*$1$k>c32$,A4$F=|5n$5$l$F$$$k3NN(!#(B
+        <DD>障害発見時間の分布がゴンペルツ分布に従うモデル。
+        <DT>Fault-Free 確率（FFprob.）
+        <DD>任意の時刻における障害が全て除去されている確率。
         <DT>Gamma SRM (Delayed S-shape)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%,%s%^J,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布がガンマ分布に従うモデル。
         <DT>KS Distance
-        <DD>2$B$D$NJl=8CD$NJ,I[4X?t$N4V$N:9!#%b%G%k$NE,9gEY$rB,$k<\EY$N0l$D!#(B
+        <DD>2つの母集団の分布関数の間の差。モデルの適合度を測る尺度の一つ。
         <DT>Log Likelihood
-        <DD>$BBP?tL`EY!#3NN(%b%G%k$,$I$l$[$I>c32H/8+;~4V%G!<%?$KE,9g$7$F$$$k$+$r<($9<\EY!#(B
+        <DD>対数尤度。確率モデルがどれほど障害発見時間データに適合しているかを示す尺度。
         <DT>LogExtremeValueMax SRM (Frechet)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,(B Frechet $BJ,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布が Frechet 分布に従うモデル。
         <DT>LogExtremeValueMin SRM (Weibull)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%o%$%V%kJ,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布がワイブル分布に従うモデル。
         <DT>Logistic SRM
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%m%8%9%F%#%C%/J,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布がロジスティック分布に従うモデル。
         <DT>LogExtremeValueMin SRM (Weibull)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%o%$%V%kJ,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布がワイブル分布に従うモデル。
         <DT>LogLogistic SRM
-        <DD>$B>c32H/8+;~4V$NJ,I[$,BP?t%m%8%9%F%#%C%/J,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布が対数ロジスティック分布に従うモデル。
         <DT>LogNormal SRM
-        <DD>$B>c32H/8+;~4V$NJ,I[$,BP?t@55,J,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布が対数正規分布に従うモデル。
         <DT>Normal SRM
-        <DD>$B>c32H/8+;~4V$NJ,I[$,@55,J,I[$K=>$&%b%G%k!#(B
+        <DD>障害発見時間の分布が正規分布に従うモデル。
         <DT>MSE
-        <DD>$BJ?6Q(B2$B>h8m:9!J(BMean Square Error $B!K!#(B<BR>
-        $B3NN(%b%G%k$rMQ$$$F5a$a$?;~4V6h4V$K$*$1$k>c32$NJ?6QCM$H!">c32H/8+;~4V%G!<%?$H$N:9$N(B2$B>hOB!#(B
+        <DD>平均2乗誤差（Mean Square Error ）。<BR>
+        確率モデルを用いて求めた時間区間における障害の平均値と、障害発見時間データとの差の2乗和。
         <DT>MTBF
-        <DD>$BJ?6Q8N>c;~4V4V3V!J(BMean Time Between Failure$B!K!#<!$N>c32$,H/@8$9$k$^$G$NJ?6Q;~4V!#(B
+        <DD>平均故障時間間隔（Mean Time Between Failure）。次の障害が発生するまでの平均時間。
         <DT>Pareto SRM (Littlewood)
-        <DD>$B>c32H/8+;~4V$NJ,I[$,%Q%l!<%HJ,I[$K=>$&%b%G%k!#(B
-        <DT>$B8D?t%G!<%?(B
-        <DD>$B>c32H/8+;~4V%G!<%?$N(B1$B$D!#C10L%F%9%H4|4VKh$KH/8+$5$l$?>c32$N?t$,3JG<$5$l$?%G!<%?!#(B
-        <DT>$B;~4V%G!<%?(B
-        <DD>$B>c32H/8+;~4V%G!<%?$N(B1$B$D!#%F%9%H3+;O$+$i>c32(B1$B$D(B1$B$D$,H/@8$7$?;~4V$r;~7ONs$G3JG<$7$?%G!<%?!#(B
-        <DT>$B%=%U%H%&%'%"?.Mj@-%b%G%k!J(BSRM)
-        <DD>$B>c32H/8+;~4V%G!<%?$r3NN(!&E}7W3X$rMQ$$$F2r@O$9$k$?$a$N?tM}%b%G%k!#(B<BR>
-        $B2>Dj$9$k3NN(J,I[$J$I$K$h$C$FB?<o$N%b%G%k$,B8:_$9$k!#(B
-        <DT>$B%=%U%H%&%'%"?.MjEY(B
-        <DD>$B:G8e$K>c32$,H/8+$5$l$?;~E@$+$i>-Mh$K$+$1$F8N>c$,8+$D$+$k3NN(!#(B
-        <DT>$B%U%)!<%k%H(B
-        <DD>$B8N>c$N860x$H$J$k$b$N!#>c32!"%P%0$HF15A!#(B
-        <DT>$BJ?6QCM4X?t(B
-        <DD>$BG$0U$N;~4V6h4V$K$*$$$FH/8+$5$l$kAm4|BT>c32?t!#(B
+        <DD>障害発見時間の分布がパレート分布に従うモデル。
+        <DT>個数データ
+        <DD>障害発見時間データの1つ。単位テスト期間毎に発見された障害の数が格納されたデータ。
+        <DT>時間データ
+        <DD>障害発見時間データの1つ。テスト開始から障害1つ1つが発生した時間を時系列で格納したデータ。
+        <DT>ソフトウェア信頼性モデル（SRM)
+        <DD>障害発見時間データを確率・統計学を用いて解析するための数理モデル。<BR>
+        仮定する確率分布などによって多種のモデルが存在する。
+        <DT>ソフトウェア信頼度
+        <DD>最後に障害が発見された時点から将来にかけて故障が見つかる確率。
+        <DT>フォールト
+        <DD>故障の原因となるもの。障害、バグと同義。
+        <DT>平均値関数
+        <DD>任意の時間区間において発見される総期待障害数。
       </DL>
       </td></tr>
 </table>
